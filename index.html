@@ -1,0 +1,655 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Alberto Clocks</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="Style.css" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&amp;family=Poppins:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+</head>
+<body><div class="preloader" id="preloader">
+<img alt="Loading" class="loader-clock" src="images/alberto-clock-preloader.svg"/>
+</div><nav class="navbar navbar-expand-lg navbar-dark navbar-load">
+<div class="container">
+<div class="navbar-top d-flex align-items-center w-100">
+<!-- LOGO -->
+<a class="navbar-brand" href="#home">
+<img class="logo" src="images/alberto-clock-icon.png"/>
+<h3>
+<b>ALBERTO<span>CLOCKS</span></b>
+</h3>
+</a>
+<!-- RIGHT SIDE -->
+<div class="navbar-right ms-auto">
+<!-- VISITOR COUNTER -->
+<div class="visitor-counter">
+<span class="visitor-icon">👥</span>
+<div class="visitor-info">
+<small>VISITORS:</small>
+<h6 id="visitor-count">0</h6>
+</div>
+</div>
+<!-- MOBILE TOGGLER -->
+<button aria-controls="navbarmenu" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler" data-bs-target="#navbarmenu" data-bs-toggle="collapse" type="button">
+<span class="navbar-toggler-icon"></span>
+</button>
+</div>
+</div>
+<!-- SECOND ROW NAVIGATION LINK -->
+<div class="collapse navbar-collapse navbar-links" id="navbarmenu">
+<ul class="navbar-nav ms-auto">
+<li class="nav-item">
+<a class="nav-link active" href="#home"><b>Home</b></a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="#products"><b>Products</b></a>
+</li>
+<!-- TECHNOLOGY DROPDOWN -->
+<li class="nav-item dropdown d-flex align-items-center">
+<!-- TECHNOLOGY LINK -->
+<a class="nav-link" href="#technology">
+<b>Technology</b>
+</a>
+<!-- DROPDOWN ARROW -->
+<button aria-expanded="false" class="technology-arrow dropdown-toggle" data-bs-toggle="dropdown" type="button">
+</button>
+<ul class="dropdown-menu">
+<li><a class="dropdown-item" href="#store-locator">Store Locator</a></li>
+<li><a class="dropdown-item" href="#support">Support</a></li>
+<li><a class="dropdown-item" href="#gallery">Gallery</a></li>
+</ul>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="#about-us"><b>About Us</b></a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="#contact-us"><b>Contact Us</b></a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="#sitemap"><b>Sitemap</b></a>
+</li>
+<button class="dark-mode-btn" id="darkmodebtn" type="button">
+                🌙
+            </button>
+</ul>
+</div>
+</div>
+</nav><main id="spa-content"><section class="hero spa-page" id="home">
+<video autoplay="" class="hero-video" loop="" muted="" playsinline="">
+<source src="videos/video.mp4" type="video/mp4"/>
+</video>
+<div class="hero-overlay"></div>
+<div class="container hero-container">
+<div class="hero-content">
+<span><strong>TIMELESS ELEGANCE</strong></span>
+<h1>More Than Just
+               a Watch
+            </h1>
+<p>
+                Discover the perfect blend of craftsmanship
+                innovation and style. Alberto Clocks _where
+                every second tells a story 
+            </p>
+<a class="hero-btn" href="#products">Explore Collection</a>
+</div>
+</div>
+</section><section class="product-section spa-page" hidden="hidden" id="products">
+<div class="container">
+<div class="product-heading text-center">
+<span> OUR RANGE</span>
+<h2>Products &amp; <span>Pricelist</span></h2>
+<p> Select a product line-up to filter the collection.
+          Select any product card to view its full details. </p>
+</div>
+<!-- PRODUCT FILTERS -->
+<div class="product-filters" data-aos="zoom-in">
+<button class="filter-btn active" data-filter="all">
+         All Watches
+      </button>
+<button class="filter-btn" data-filter="luxury">
+         Luxury
+      </button>
+<button class="filter-btn" data-filter="vintage">
+         Vintage
+      </button>
+<button class="filter-btn" data-filter="smart">
+         Smart
+      </button>
+<button class="filter-btn" data-filter="clock">
+         Clocks
+      </button>
+</div>
+<!-- PRODUCT CARDS -->
+<!-- SMART BUTTON -->
+<div class="row g-4" data-aos="zoom-in" id="product-list">
+<div class="col-12 col-sm-6 col-lg-3 col-md-4 product-item" data-category="smart">
+<div class="product-card" data-description="A Modern Smart Watch designed for everyday use." data-name="Modern Smart Watch" data-price="2500" role="button" tabindex="0">
+<img alt="" src="images/card 1.jfif"/>
+<div class="product-info">
+<h4>Modern Smart Watch</h4>
+<p>Rs.25,000</p>
+<span>View Details→</span>
+</div>
+</div>
+</div>
+<div class="col-12 col-sm-6 col-lg-3 col-md-4 product-item" data-category="smart">
+<div class="product-card" data-description="A Sporty Smart Watch is an active Lifestyle" data-name="Sport Smart Watch" data-price="28000" role="button" tabindex="0">
+<img alt="" src="images/PremiumBrownChronographSportsWatchforMen.webp"/>
+<div class="product-info">
+<h4>Sport Smart Watch</h4>
+<p>Rs.28,000</p>
+<span>View Details→</span>
+</div>
+</div>
+</div>
+<div class="col-12 col-sm-6 col-lg-3 col-md-4 product-item" data-category="smart">
+<div class="product-card" data-description="A Premium Smart Watch designed for everyday use." data-name="Premium Smart Watch" data-price="38000" role="button" tabindex="0">
+<img alt="" src="images/replace.webp"/>
+<div class="product-info">
+<h4>Modern Smart Watch</h4>
+<p>Rs.38,000</p>
+<span>View Details→</span>
+</div>
+</div>
+</div>
+<!-- LUXURY BUTTON -->
+<div class="col-12 col-sm-6 col-lg-3 col-md-4 product-item" data-category="luxury">
+<div class="product-card" data-description="A sophisticated watch with a premium design." data-name="Luxury Choronograph" data-price="45000" role="button" tabindex="0">
+<img alt="" src="images/card4.webp"/>
+<div class="product-info">
+<h4>Luxury Choronograph</h4>
+<p>Rs.45,000</p>
+<span>View Details→</span>
+</div>
+</div>
+</div>
+<div class="col-12 col-sm-6 col-lg-3 col-md-4 product-item" data-category="luxury">
+<div class="product-card" data-description="A gold-toned luxury watch with an elegant finish." data-name="Gold Luxury Watch" data-price="55000" role="button" tabindex="0">
+<img alt="" src="images/card5.png"/>
+<div class="product-info">
+<h4>Golden Luxury Watch</h4>
+<p>Rs.55,000</p>
+<span>View Details→</span>
+</div>
+</div>
+</div>
+<div class="col-12 col-sm-6 col-lg-3 col-md-4 product-item" data-category="luxury">
+<div class="product-card" data-description="A sleek black luxury watch with a timeless look." data-name="Black Luxury Watch" data-price="60000" role="button" tabindex="0">
+<img alt="" src="images/card6.webp"/>
+<div class="product-info">
+<h4>Black Luxury Watch</h4>
+<p>Rs.60,000</p>
+<span>View Details→</span>
+</div>
+</div>
+</div>
+<!-- VINTAGE BUTTON -->
+<div class="col-12 col-sm-6 col-lg-3 col-md-4 product-item" data-category="vintage">
+<div class="product-card" data-description="A classic timepiece inspired by vintage design." data-name="Classic Vintage Watch" data-price="18000" role="button" tabindex="0">
+<img alt="" src="images/card7.webp"/>
+<div class="product-info">
+<h4>Classic Vintage Watch</h4>
+<p>Rs.18,000</p>
+<span>View Details→</span>
+</div>
+</div>
+</div>
+<div class="col-12 col-sm-6 col-lg-3 col-md-4 product-item" data-category="vintage">
+<div class="product-card" data-description="A brown vintage-inspired watch with a classic appearance." data-name="Brown Vintage Watch" data-price="22000" role="button" tabindex="0">
+<img alt="" src="images/card8.jfif"/>
+<div class="product-info">
+<h4>Brown Vintage Watch</h4>
+<p>Rs.22,000</p>
+<span>View Details→</span>
+</div>
+</div>
+</div>
+<div class="col-12 col-sm-6 col-lg-3 col-md-4 product-item" data-category="vintage">
+<div class="product-card" data-description="A traditional watch for lovers of vintage style." data-name="Vintage Classic Watch" data-price="20000" role="button" tabindex="0">
+<img alt="" src="images/card9.webp"/>
+<div class="product-info">
+<h4>Vintage Classic Watch</h4>
+<p> Rs.20,000</p>
+<span>View Details→</span>
+</div>
+</div>
+</div>
+<!-- CLOCKS BUTTON -->
+<div class="col-12 col-sm-6 col-lg-3 col-md-4 product-item" data-category="clock">
+<div class="product-card" data-description="An elegant wall clock for your home interior." data-name="Elegant Wall Clock" data-price="12000" role="button" tabindex="0">
+<img alt="" src="images/card10.webp"/>
+<div class="product-info">
+<h4>Elegant Wall Clock</h4>
+<p>Rs.12,000</p>
+<span>View Details→</span>
+</div>
+</div>
+</div>
+<div class="col-12 col-sm-6 col-lg-3 col-md-4 product-item" data-category="clock">
+<div class="product-card" data-description="A compact table clock for desks and bedside tables." data-name="Classic Table Clock" data-price="8000" role="button" tabindex="0">
+<img alt="" src="images/card11.webp"/>
+<div class="product-info">
+<h4>Classic Wall Clock</h4>
+<p>Rs.8,000</p>
+<span>View Details→</span>
+</div>
+</div>
+</div>
+<div class="col-12 col-sm-6 col-lg-3 col-md-4 product-item" data-category="clock">
+<div class="product-card" data-description="A decorative clock with a luxurious appearance." data-name="Luxury Decorative Clock" data-price="15000" role="button" tabindex="0">
+<img alt="" src="images/71tYp6eXSBL._AC_UF894,1000_QL80_.jpg"/>
+<div class="product-info">
+<h4>Luxury Decorative Clock</h4>
+<p>Rs.38,000</p>
+<span>View Details→</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section><section class="technology-section spa-page" hidden="hidden" id="technology">
+<div class="container">
+<div class="technology-heading">
+<span>INSIDE EVERY SECOND</span>
+<h2>Technology &amp; Craft</h2>
+<p>  Every Alberto watch combines precision,
+                craftsmanship and innovation to deliver
+                exceptional performance and timeless style.
+            </p>
+</div>
+<div class="row g-4">
+<!-- CARD 1 -->
+<div class="col-lg-4 col-md-6">
+<div class="technology-card">
+<div class="technology-icon">⚙</div>
+<h4>Automatic Movement</h4>
+<p> Uses the motion of the wearer's wrist
+                        to wind a mechanical spring. No battery
+                        is needed for the movement.
+                    </p>
+</div>
+</div>
+<!-- CARD 2 -->
+<div class="col-lg-4 col-md-6">
+<div class="technology-card">
+<div class="technology-icon">◷</div>
+<h4>Quartz Precision</h4>
+<p> A battery powers a quartz crystal
+                        oscillator to keep time accurately
+                        with minimal maintenance.
+                    </p>
+</div>
+</div>
+<!-- CARD 3 -->
+<div class="col-lg-4 col-md-6">
+<div class="technology-card">
+<div class="technology-icon">⌁</div>
+<h4>Smart Technology</h4>
+<p>Digital features can include activity
+                        tracking, notifications, timers and
+                        phone connectivity.
+                    </p>
+</div>
+</div>
+</div>
+</div>
+</section><section class="store-section spa-page" hidden="hidden" id="store-locator">
+<div class="container">
+<div class="store-image">
+<img alt="" src="images/Elegant Watch and Clock Boutique.png"/>
+</div>
+<div class="store-content">
+<span>FIND OUR STORE</span>
+<h2>VISIT ALBERTO CLOCKS</h2>
+<p>
+                Discover our world of timeless elegance
+                and explore our luxury watch collection.
+            </p>
+<h4>Alberto Clocks – Karachi</h4>
+<p><strong>Location:</strong> DHA, Karachi, Pakistan</p>
+<p><strong>Opening Hours:</strong>
+                Monday – Saturday, 10 AM – 9 PM
+            </p>
+<a class="store-btn" href="https://www.google.com/maps/search/?api=1&amp;query=DHA+Karachi" target="_blank">
+                Get Directions
+            </a>
+</div>
+</div>
+</section><section class="support-section spa-page" hidden="hidden" id="support">
+<div class="container">
+<div class="row align-items-center">
+<div class="col-lg-5">
+<div class="support-info">
+<span>Customer Care</span>
+<h2>We're Here to Help</h2>
+<p>Have a question about our watches?
+                    Our support team is here to assist you. </p>
+<div class="support-detail">
+<h5>Email Support</h5>
+<p>support@albertoclocks.com</p>
+</div>
+<div class="support-detail">
+<h5>Customer Service</h5>
+<p>Monday – Saturday</p>
+</div>
+</div>
+</div>
+<div class="col-lg-7">
+<div class="support-form">
+<form id="support-form">
+<div class="mb-3">
+<label for="support-name">Your Name</label>
+<input class="form-control" id="support-name" placeholder="Enter Your Name" type="text"/>
+</div>
+<div class="mb-3">
+<label for="support-email"> Email Address</label>
+<input class="form-control" id="support-email" placeholder="Enter Your Email" type="text"/>
+</div>
+<div class="mb-3">
+<label for="support-subject">Subject</label>
+<input class="support-subject" id="support-subject" placeholder="Enter Subject" type="text"/>
+</div>
+<div class="mb-3">
+<label for="support-message">Message</label>
+<textarea class="form-control" id="support-message" placeholder="Write Your Message" rows="4"></textarea>
+</div>
+<button class="support-btn" type="submit">
+                           Send Message
+                        </button>
+<p id="support-feedback"></p>
+</form>
+</div>
+</div>
+</div>
+</div>
+</section><section class="gallery-section spa-page" hidden="hidden" id="gallery">
+<div class="container">
+<div class="gallery-heading">
+<span>OUR COLLECTION</span>
+<h2>Watch Gallery</h2>
+<p>Explore the elegance, details and craftsmanship of Alberto Clocks.</p>
+</div>
+<div class="row g-2 mt-0">
+<div class="col-lg-4 col-md-6">
+<div class="gallery-item">
+<img alt="Luxury Watch" src="images/galler6.webp"/>
+</div>
+</div>
+<div class="col-lg-4 col-md-6">
+<div class="gallery-item">
+<img alt="Classic Watch" src="images/gallery1.jpg"/>
+</div>
+</div>
+<div class="col-lg-4 col-md-6">
+<div class="gallery-item">
+<img alt="Elegant Watch" src="images/gallery2.jfif"/>
+</div>
+</div>
+<div class="col-lg-4 col-md-6">
+<div class="gallery-item">
+<img alt="Premium Watch" src="images/galler3.jfif"/>
+</div>
+</div>
+<div class="col-lg-4 col-md-6">
+<div class="gallery-item">
+<img alt="Modern Watch" src="images/gallery4.jfif"/>
+</div>
+</div>
+<div class="col-lg-4 col-md-6">
+<div class="gallery-item">
+<img alt="Watch Detail" src="images/gallery5.webp"/>
+</div>
+</div>
+</div>
+</div>
+</section><section class="about-section spa-page" hidden="hidden" id="about-us">
+<div class="container">
+<div class="row align-items-center g-5">
+<div class="col-lg-6">
+<div class="about-image">
+<img alt="Alberto Luxury Watch" src="images/aboutjpg.jfif"/>
+</div>
+</div>
+<div class="col-lg-6">
+<div class="about-content">
+<span>OUR STORY</span>
+<h2>Timeless Elegance, Crafted with Precision</h2>
+<p>
+                        At Alberto Clocks, we believe a watch is more
+                        than just a timepiece. It is a reflection of
+                        your personality, style and confidence.
+                    </p>
+<p>
+                        Our collection brings together elegant designs,
+                        modern technology and timeless craftsmanship
+                        to make every moment special.
+                    </p>
+<a class="about-btn" href="#products">Explore Collection</a>
+</div>
+</div>
+</div>
+</div>
+</section><section class="contact-section spa-page" hidden="hidden" id="contact-us">
+<div class="container" data-aos="fade-up">
+<div class="contact-heading">
+<span>GET IN TOUCH</span>
+<h2>Contact Us</h2>
+<p>We would love to hear from you. Get in touch with us!</p>
+</div>
+<div class="row g-4">
+<!-- CONTACT INFORMATION -->
+<div class="col-lg-5">
+<div class="contact-info">
+<h3>Let's Talk</h3>
+<p>Have a question about our watches or collection? Send us a message.</p>
+<div class="contact-detail">
+<h5>Email</h5>
+<p>info@albertoclocks.com</p>
+</div>
+<div class="contact-detail">
+<h5>Phone</h5>
+<p>+92 300 1234567</p>
+</div>
+<div class="contact-detail">
+<h5>Location</h5>
+<p>Karachi, Pakistan</p>
+</div>
+</div>
+</div>
+<!-- CONTACT FORM -->
+<div class="col-lg-7">
+<div class="contact-form">
+<form id="contact-form">
+<div class="mb-3">
+<label for="contact-name">Your Name</label>
+<input class="form-control" id="contact-name" placeholder="Enter your name" type="text"/>
+</div>
+<div class="mb-3">
+<label for="contact-email">Email Address</label>
+<input class="form-control" id="contact-email" placeholder="Enter your email" type="email"/>
+</div>
+<div class="mb-3">
+<label for="contact-subject">Subject</label>
+<input class="form-control" id="contact-subject" placeholder="Enter subject" type="text"/>
+</div>
+<div class="mb-3">
+<label for="contact-message">Your Message</label>
+<textarea class="form-control" id="contact-message" placeholder="Write your message" rows="4"></textarea>
+</div>
+<button class="contact-btn" type="submit">
+                      Send Message
+                   </button>
+<p id="contact-feedback"></p>
+</form>
+</div>
+</div>
+</div>
+</div>
+</section><section class="sitemap-section spa-page" hidden="hidden" id="sitemap">
+<div class="container">
+<div class="sitemap-heading">
+<span>EXPLORE ALBERTO CLOCKS</span>
+<h2>Site Map</h2>
+<p>Find everything you need in one place.</p>
+</div>
+<div class="row g-4">
+<div class="col-lg-3 col-md-6">
+<div class="sitemap-box">
+<h4><b>Main Pages</b></h4>
+<ul>
+<li><a href="#home">Home</a></li>
+<li><a href="#products">Products</a></li>
+<li><a href="#technology">Technology</a></li>
+<li><a href="#gallery">Gallery</a></li>
+</ul>
+</div>
+</div>
+<div class="col-lg-3 col-md-6">
+<div class="sitemap-box">
+<h4><b>Discover</b></h4>
+<ul>
+<li><a href="#store">Store Locator</a></li>
+<li><a href="#about-us">About Us</a></li>
+</ul>
+</div>
+</div>
+<div class="col-lg-3 col-md-6">
+<div class="sitemap-box">
+<h4><b>Customer Care</b></h4>
+<ul>
+<li><a href="#support">Support</a></li>
+<li><a href="#contact-us">Contact Us</a></li>
+</ul>
+</div>
+</div>
+<div class="col-lg-3 col-md-6">
+<div class="sitemap-box">
+<h4><b>Our Collection</b></h4>
+<ul>
+<li><a href="#products">Smart Watches</a></li>
+<li><a href="#products">Luxury Watches</a></li>
+<li><a href="#products">Vintage Watches</a></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</section></main><div aria-hidden="true" aria-labelledby="modalname" class="modal fade" id="productmodal" tabindex="-1">
+<div class="modal-dialog modal-dialog-centered">
+<div class="modal-content">
+<!-- MODAL HEADER -->
+<div class="modal-header">
+<div>
+<span class="modal-label">ALBERTO CLOCKS</span>
+<h5 class="modal-title" id="modalname">Watch Name</h5>
+</div>
+<button aria-label="Close" class="btn-close" data-bs-dismiss="modal" type="button">
+</button>
+</div>
+<!-- MODAL BODY -->
+<div class="modal-body text-center">
+<span class="modal-tagline">
+                    THE ART OF TIMELESS ELEGANCE
+                </span>
+<h4 id="modalprice">Rs. 0</h4>
+<div class="modal-divider"></div>
+<p id="modaldescription">
+                    Discover timeless elegance with Alberto Clocks.
+                </p>
+<!-- FEATURES -->
+<div class="modal-features">
+<div class="feature-item">
+<span>✦</span>
+<h6>Premium Quality</h6>
+<p>Carefully selected materials</p>
+</div>
+<div class="feature-item">
+<span>✧</span>
+<h6>Elegant Design</h6>
+<p>Style for every occasion</p>
+</div>
+<div class="feature-item">
+<span>◈</span>
+<h6>Timeless Style</h6>
+<p>Elegance that lasts</p>
+</div>
+</div>
+<p class="modal-note">
+                    Every second tells a story.
+                </p>
+<!-- CONTACT BUTTON -->
+<button class="ask-watch-btn" id="askWatchBtn" type="button">
+                    Ask About This Watch
+                    <span>→</span>
+</button>
+</div>
+<!-- MODAL FOOTER -->
+<div class="modal-footer">
+<span>ALBERTO CLOCKS — TIMELESS BY DESIGN</span>
+</div>
+</div>
+</div>
+</div><footer class="site-footer">
+<div class="container">
+<div class="row g-4">
+<!-- Brand -->
+<div class="col-12 col-md-6 col-lg-4 content">
+<h3 class="footer-brand">
+                    ALBERTO<span>CLOCKS</span>
+</h3>
+<p class="footer-text">
+                    Timeless elegance, crafted for every moment.
+                    Discover luxury and style with Alberto Clocks.
+                </p>
+</div>
+<!-- Quick Links -->
+<div class="col-12 col-md-6 col-lg-4 links">
+<h4 class="footer-title align-items-center">Quick Links</h4>
+<ul class="footer-links align-items-center">
+<li><a href="#home">Home</a></li>
+<li><a href="#products">Products</a></li>
+<li><a href="#technology">Technology</a></li>
+<li><a href="#about-us">About Us</a></li>
+<li><a href="#contact-us">Contact Us</a></li>
+<li><a href="#sitemap">Sitemap</a></li>
+</ul>
+</div>
+<!-- Contact Information -->
+<div class="col-12 col-md-6 col-lg-4">
+<h4 class="footer-title">Contact Us</h4>
+<p class="footer-text">Email: info@albertoclocks.com</p>
+<p class="footer-text">Business Hours: Mon - Sat</p>
+<p class="footer-text">Luxury watches for every moment.</p>
+</div>
+</div>
+<div class="footer-bottom">
+<p>
+                © 2026 Alberto Clocks.
+                All Rights Reserved.
+            </p>
+</div>
+</div>
+</footer><div class="ticker-section">
+<div class="ticker-track">
+<div class="ticker-content">
+<span>📅 DATE: <span id="current-date">Loading...</span></span>
+<span class="ticker-star">✦</span>
+<span>🕒 TIME: <span id="current-time">Loading...</span></span>
+<span class="ticker-star">✦</span>
+<span>📍 LOCATION: <span id="current-location">Detecting...</span></span>
+<span class="ticker-star">✦</span>
+</div>
+<div aria-hidden="true" class="ticker-content">
+<span>📅 DATE: <span class="date-copy">Loading...</span></span>
+<span class="ticker-star">✦</span>
+<span>🕒 TIME: <span class="time-copy">Loading...</span></span>
+<span class="ticker-star">✦</span>
+<span>📍 LOCATION: <span class="location-copy"></span>Denied...</span>
+<span class="ticker-star">✦</span>
+</div>
+</div>
+</div><script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script><script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.14.2/gsap.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.14.2/ScrollTrigger.min.js"></script><script src="script.js"></script></body>
+</html>
